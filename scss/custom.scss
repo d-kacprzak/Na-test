@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;500;700&display=swap');
+
+$color1: #000000;
+$color2: #111111;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 1440px;
+  height: 470px;
+  background: #fff;
+  @media (max-width: 992px) {
+    width: 600px;
+    margin: 0 auto;
+    height: auto;
+    flex-direction: column;
+  }
+
+  @media (max-width: 576px) {
+    width: 400px;
+  }
+}
+
+.left-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 57px 0 55px 165px;
+  h2.main-header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: $color1;
+    margin-bottom: 28px;
+  }
+  p.content {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color1;
+    margin-bottom: 59px;
+  }
+  h3.subHeader {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: $color2;
+    margin-bottom: 16px;
+  }
+  p.feature-content {
+    width: 190px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color2;
+  }
+
+  @media (max-width: 992px) {
+    h2.main-header {
+      text-align: center;
+      color: $color1;
+      margin-bottom: 28px;
+    }
+    p.content {
+      margin-bottom: 35px;
+    }
+    padding: 50px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  @media (max-width: 576px) {
+    h2.main-header {
+      text-align: center;
+      color: $color1;
+      margin-bottom: 28px;
+      font-size: 24px;
+    }
+    p.content {
+      margin-bottom: 35px;
+      text-align: justify;
+    }
+    padding: 50px;
+    margin: 0 auto;
+    height: auto;
+  }
+}
+.right-box {
+  .image {
+    width: 555px;
+    height: 400px;
+    margin: 35px 165px 35px 110px;
+    @media (max-width: 992px) {
+      justify-content: center;
+      width: 400px;
+      height: 300px;
+      margin-top: -20px;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 576px) {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 50px;
+      width: 50vw;
+      height: 40vw;
+    }
+  }
+
+}
